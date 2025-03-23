@@ -11,51 +11,47 @@
     
     <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
     <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
-    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
     
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_4fc4c2f9911038612d7b84730da888c4 {
+                #map_763ecefd6b94f8eedeba293fa4e5b0fd {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
                     left: 0.0%;
                     top: 0.0%;
                 }
-                .leaflet-container { font-size: 1rem; }
             </style>
         
 </head>
 <body>
     
     
-            <div class="folium-map" id="map_4fc4c2f9911038612d7b84730da888c4" ></div>
+            <div class="folium-map" id="map_763ecefd6b94f8eedeba293fa4e5b0fd" ></div>
         
 </body>
 <script>
     
     
-            var map_4fc4c2f9911038612d7b84730da888c4 = L.map(
-                "map_4fc4c2f9911038612d7b84730da888c4",
+            var map_763ecefd6b94f8eedeba293fa4e5b0fd = L.map(
+                "map_763ecefd6b94f8eedeba293fa4e5b0fd",
                 {
                     center: [42.5, 12.5],
                     crs: L.CRS.EPSG3857,
-                    ...{
-  "zoom": 6,
-  "zoomControl": true,
-  "preferCanvas": false,
-}
-
+                    zoom: 6,
+                    zoomControl: true,
+                    preferCanvas: false,
                 }
             );
 
@@ -63,159 +59,174 @@
 
         
     
-            var tile_layer_5343133ce444128e6ff3f97629d1111f = L.tileLayer(
-                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
-                {
-  "minZoom": 0,
-  "maxZoom": 19,
-  "maxNativeZoom": 19,
-  "noWrap": false,
-  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
-  "subdomains": "abc",
-  "detectRetina": false,
-  "tms": false,
-  "opacity": 1,
-}
-
+            var tile_layer_ee5f3c8b08e2c2ab3d43101b96756c22 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_763ecefd6b94f8eedeba293fa4e5b0fd);
+        
+    
+            var marker_eb2791f61515147f0d0382446d43e535 = L.marker(
+                [41.2897, 13.2503],
+                {}
+            ).addTo(map_763ecefd6b94f8eedeba293fa4e5b0fd);
+        
+    
+            var icon_9fd54938225aba4e919d71b9f0bcf1d1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
             );
+            marker_eb2791f61515147f0d0382446d43e535.setIcon(icon_9fd54938225aba4e919d71b9f0bcf1d1);
         
     
-            tile_layer_5343133ce444128e6ff3f97629d1111f.addTo(map_4fc4c2f9911038612d7b84730da888c4);
-        
-    
-            var marker_420dc53569882cbb6eb0afa1e8be415a = L.marker(
-                [41.2886, 13.247],
-                {
-}
-            ).addTo(map_4fc4c2f9911038612d7b84730da888c4);
-        
-    
-        var popup_df1a54577aee4ff48f3c84385cb33db5 = L.popup({
-  "maxWidth": "100%",
-});
+        var popup_c2d678d6655c15d360f5e4ce6c30baca = L.popup({"maxWidth": "100%"});
 
         
-            
-                var html_e57d8db0e825db044692fa351314c14e = $(`<div id="html_e57d8db0e825db044692fa351314c14e" style="width: 100.0%; height: 100.0%;"><b>Hotel Riviera</b><br>Terracina<br><b>Cena:</b> 10250 zł</div>`)[0];
-                popup_df1a54577aee4ff48f3c84385cb33db5.setContent(html_e57d8db0e825db044692fa351314c14e);
-            
+            var html_4591bfce9939fc5ff1b21d7fdc0a07c8 = $(`<div id="html_4591bfce9939fc5ff1b21d7fdc0a07c8" style="width: 100.0%; height: 100.0%;">     <b>Villa Venere Superior</b><br>     Terracina<br>     <b>Cena:</b> 10250<br>     <a href="https://www.airbnb.pl/rooms/1145619573001835335?adults=8&category_tag=Tag%3A789&check_in=2025-09-13&check_out=2025-09-20&search_mode=flex_destinations_search&photo_id=1896482567&source_impression_id=p3_1742664453_P347s4YYSMiRQ9cp&previous_page_section_name=1000&federated_search_id=c6087be2-d0fa-4cdc-bda6-4b9852bb5eab&fbclid=IwY2xjawJNLipleHRuA2FlbQIxMAABHXMWTtz2t3ExM-cCY0rb-Jgfr0GzEnrkEfasw16cFtp_50Z8R_2s_-slfg_aem_a9fILCZTCYgpCae623Nt_Q" target="_blank">Zobacz ofertę</a>     </div>`)[0];
+            popup_c2d678d6655c15d360f5e4ce6c30baca.setContent(html_4591bfce9939fc5ff1b21d7fdc0a07c8);
         
 
-        marker_420dc53569882cbb6eb0afa1e8be415a.bindPopup(popup_df1a54577aee4ff48f3c84385cb33db5)
+        marker_eb2791f61515147f0d0382446d43e535.bindPopup(popup_c2d678d6655c15d360f5e4ce6c30baca)
         ;
 
         
     
     
-            marker_420dc53569882cbb6eb0afa1e8be415a.bindTooltip(
+            marker_eb2791f61515147f0d0382446d43e535.bindTooltip(
                 `<div>
-                     Hotel Riviera
+                     Villa Venere Superior
                  </div>`,
-                {
-  "sticky": true,
-}
+                {"sticky": true}
             );
         
     
-            var marker_5379c6b1865fa5e0d5c9fc29f0fb28e1 = L.marker(
-                [38.0732, 13.4923],
-                {
-}
-            ).addTo(map_4fc4c2f9911038612d7b84730da888c4);
+            var marker_1ad9ba55efacd046315338bd99e10739 = L.marker(
+                [37.9782, 12.9569],
+                {}
+            ).addTo(map_763ecefd6b94f8eedeba293fa4e5b0fd);
         
     
-        var popup_6e60ffdf10e27b7fdd756e7527a1eac9 = L.popup({
-  "maxWidth": "100%",
-});
+            var icon_7146a6c07a1ae648df762f62ec788127 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_1ad9ba55efacd046315338bd99e10739.setIcon(icon_7146a6c07a1ae648df762f62ec788127);
+        
+    
+        var popup_946ea348bb4e0e768973f76838a6a294 = L.popup({"maxWidth": "100%"});
 
         
-            
-                var html_f5129d1e28ba3b1123e9ced5a702b61b = $(`<div id="html_f5129d1e28ba3b1123e9ced5a702b61b" style="width: 100.0%; height: 100.0%;"><b>Villa Paradiso</b><br>Ficarazzi<br><b>Cena:</b> 8798 zł</div>`)[0];
-                popup_6e60ffdf10e27b7fdd756e7527a1eac9.setContent(html_f5129d1e28ba3b1123e9ced5a702b61b);
-            
+            var html_b9938c964b6375775dd49628db569861 = $(`<div id="html_b9938c964b6375775dd49628db569861" style="width: 100.0%; height: 100.0%;">     <b>Villa Mucera</b><br>     Ficarazzi<br>     <b>Cena:</b> 8798<br>     <a href="https://www.airbnb.pl/rooms/38476868?adults=8&category_tag=Tag%3A789&check_in=2025-09-13&check_out=2025-09-20&location=W%C5%82ochy&search_mode=flex_destinations_search&photo_id=1934800935&source_impression_id=p3_1742665479_P3hUM9uHkg3Uhw25&previous_page_section_name=1001&federated_search_id=a40713bf-c356-46a6-9721-7c1c94c4b168&fbclid=IwZXh0bgNhZW0CMTEAAR28AQlUQlRMGsT0uIy9SlS71_1YpCnufeznGOVGF9rkFnCln_tbsbejmUM_aem_YOp0m2TALTv1qgFoAsXvSA" target="_blank">Zobacz ofertę</a>     </div>`)[0];
+            popup_946ea348bb4e0e768973f76838a6a294.setContent(html_b9938c964b6375775dd49628db569861);
         
 
-        marker_5379c6b1865fa5e0d5c9fc29f0fb28e1.bindPopup(popup_6e60ffdf10e27b7fdd756e7527a1eac9)
+        marker_1ad9ba55efacd046315338bd99e10739.bindPopup(popup_946ea348bb4e0e768973f76838a6a294)
         ;
 
         
     
     
-            marker_5379c6b1865fa5e0d5c9fc29f0fb28e1.bindTooltip(
+            marker_1ad9ba55efacd046315338bd99e10739.bindTooltip(
                 `<div>
-                     Villa Paradiso
+                     Villa Mucera
                  </div>`,
-                {
-  "sticky": true,
-}
+                {"sticky": true}
             );
         
     
-            var marker_cdafbec4b5cca8e9ec9319b1b7207e50 = L.marker(
-                [37.979, 12.96],
-                {
-}
-            ).addTo(map_4fc4c2f9911038612d7b84730da888c4);
+            var marker_836df768ee45851cad91e2f8c745dbfa = L.marker(
+                [38.0876, 13.5204],
+                {}
+            ).addTo(map_763ecefd6b94f8eedeba293fa4e5b0fd);
         
     
-        var popup_03a93bcfbdeaec70730dde6ca104dd7f = L.popup({
-  "maxWidth": "100%",
-});
+            var icon_60bee0480b47f3bdfd5eb3b3c13ab446 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_836df768ee45851cad91e2f8c745dbfa.setIcon(icon_60bee0480b47f3bdfd5eb3b3c13ab446);
+        
+    
+        var popup_01581c3a4e5220f850d1b31d6640c3c1 = L.popup({"maxWidth": "100%"});
 
         
-            
-                var html_1b78633774f3c205deafa89e9f2a7741 = $(`<div id="html_1b78633774f3c205deafa89e9f2a7741" style="width: 100.0%; height: 100.0%;"><b>Resort Alcamo Mare</b><br>Alcamo<br><b>Cena:</b> 9868 zł</div>`)[0];
-                popup_03a93bcfbdeaec70730dde6ca104dd7f.setContent(html_1b78633774f3c205deafa89e9f2a7741);
-            
+            var html_312bb95b9bce471d709f0b54dacdffb9 = $(`<div id="html_312bb95b9bce471d709f0b54dacdffb9" style="width: 100.0%; height: 100.0%;">     <b>Dom wakacyjny na plaży [Golden Sea]</b><br>     Alcamo<br>     <b>Cena:</b> 9868<br>     <a href="https://www.airbnb.pl/rooms/1094161853110952536?adults=8&category_tag=Tag%3A789&check_in=2025-09-13&check_out=2025-09-20&search_mode=flex_destinations_search&photo_id=1866291690&source_impression_id=p3_1742665389_P3uXbm7xg_2MoWZt&previous_page_section_name=1000&federated_search_id=0b9ebba6-861a-4b6b-9409-35f79371c6c5&fbclid=IwZXh0bgNhZW0CMTEAAR01nZ7HUO8q_RgRHKSMwI5IQjs-DahGmhmMSUrsIGfjr9o6gJpQnu8oaGU_aem_M1Fk14gBUq1T845kPnT46A" target="_blank">Zobacz ofertę</a>     </div>`)[0];
+            popup_01581c3a4e5220f850d1b31d6640c3c1.setContent(html_312bb95b9bce471d709f0b54dacdffb9);
         
 
-        marker_cdafbec4b5cca8e9ec9319b1b7207e50.bindPopup(popup_03a93bcfbdeaec70730dde6ca104dd7f)
+        marker_836df768ee45851cad91e2f8c745dbfa.bindPopup(popup_01581c3a4e5220f850d1b31d6640c3c1)
         ;
 
         
     
     
-            marker_cdafbec4b5cca8e9ec9319b1b7207e50.bindTooltip(
+            marker_836df768ee45851cad91e2f8c745dbfa.bindTooltip(
                 `<div>
-                     Resort Alcamo Mare
+                     Dom wakacyjny na plaży [Golden Sea]
                  </div>`,
-                {
-  "sticky": true,
-}
+                {"sticky": true}
             );
         
     
-            var marker_7c31b89297bb926b3fdb2324a115d9c0 = L.marker(
-                [43.092, 10.5432],
-                {
-}
-            ).addTo(map_4fc4c2f9911038612d7b84730da888c4);
+            var marker_62803521369c8df012d7ca43fec43117 = L.marker(
+                [43.0934, 10.5426],
+                {}
+            ).addTo(map_763ecefd6b94f8eedeba293fa4e5b0fd);
         
     
-        var popup_df663e1a287a8063761fcc19b83c46a0 = L.popup({
-  "maxWidth": "100%",
-});
+            var icon_2c4ddcdbe89a1a7eee1786af53c76403 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_62803521369c8df012d7ca43fec43117.setIcon(icon_2c4ddcdbe89a1a7eee1786af53c76403);
+        
+    
+        var popup_3c2728aa6a5dea637036756c4f03e1af = L.popup({"maxWidth": "100%"});
 
         
-            
-                var html_450cce3ccf384f46b765c339e2b505a6 = $(`<div id="html_450cce3ccf384f46b765c339e2b505a6" style="width: 100.0%; height: 100.0%;"><b>Hotel Sole Mare</b><br>San Vincenzo<br><b>Cena:</b> 6691 zł</div>`)[0];
-                popup_df663e1a287a8063761fcc19b83c46a0.setContent(html_450cce3ccf384f46b765c339e2b505a6);
-            
+            var html_8058b95df21ff2e3c79617ceeb236473 = $(`<div id="html_8058b95df21ff2e3c79617ceeb236473" style="width: 100.0%; height: 100.0%;">     <b>Villa Seristori</b><br>     San Vincenzo<br>     <b>Cena:</b> 6691<br>     <a href="https://www.airbnb.pl/rooms/13743723?adults=8&category_tag=Tag%3A789&check_in=2025-09-13&check_out=2025-09-20&search_mode=flex_destinations_search&photo_id=1158560247&source_impression_id=p3_1742663984_P343uen8R261zKD6&previous_page_section_name=1000&federated_search_id=f4cc069f-8c1a-4897-915d-c745e4ddbf61" target="_blank">Zobacz ofertę</a>     </div>`)[0];
+            popup_3c2728aa6a5dea637036756c4f03e1af.setContent(html_8058b95df21ff2e3c79617ceeb236473);
         
 
-        marker_7c31b89297bb926b3fdb2324a115d9c0.bindPopup(popup_df663e1a287a8063761fcc19b83c46a0)
+        marker_62803521369c8df012d7ca43fec43117.bindPopup(popup_3c2728aa6a5dea637036756c4f03e1af)
         ;
 
         
     
     
-            marker_7c31b89297bb926b3fdb2324a115d9c0.bindTooltip(
+            marker_62803521369c8df012d7ca43fec43117.bindTooltip(
                 `<div>
-                     Hotel Sole Mare
+                     Villa Seristori
                  </div>`,
-                {
-  "sticky": true,
-}
+                {"sticky": true}
+            );
+        
+    
+            var marker_f1511a01e60ca209d6ec6914e02f3d1a = L.marker(
+                [41.2842, 13.2527],
+                {}
+            ).addTo(map_763ecefd6b94f8eedeba293fa4e5b0fd);
+        
+    
+            var icon_9cdbfc540a83893b399c0a360801893d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f1511a01e60ca209d6ec6914e02f3d1a.setIcon(icon_9cdbfc540a83893b399c0a360801893d);
+        
+    
+        var popup_524982547311099cd7e96431104ab289 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c0066e6ff11f7f007f9656c50900f8d6 = $(`<div id="html_c0066e6ff11f7f007f9656c50900f8d6" style="width: 100.0%; height: 100.0%;">     <b>Acca residence</b><br>     Terracina<br>     <b>Cena:</b> 10823<br>     <a href="https://www.booking.com/hotel/it/acca-residence-terracina.pl.html?aid=898224&app_hotel_id=4747716&checkin=2025-09-13&checkout=2025-09-20&from_sn=ios&group_adults=8&group_children=0&label=room_list-rDMTCQh%401742495736&no_rooms=4&req_adults=8&req_children=0&room1=A%2CA%2CA%2CA%2CA%2CA%2CA%2CA%2C" target="_blank">Zobacz ofertę</a>     </div>`)[0];
+            popup_524982547311099cd7e96431104ab289.setContent(html_c0066e6ff11f7f007f9656c50900f8d6);
+        
+
+        marker_f1511a01e60ca209d6ec6914e02f3d1a.bindPopup(popup_524982547311099cd7e96431104ab289)
+        ;
+
+        
+    
+    
+            marker_f1511a01e60ca209d6ec6914e02f3d1a.bindTooltip(
+                `<div>
+                     Acca residence
+                 </div>`,
+                {"sticky": true}
             );
         
 </script>
