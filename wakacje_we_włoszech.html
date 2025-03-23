@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_4fc4c2f9911038612d7b84730da888c4 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_4fc4c2f9911038612d7b84730da888c4" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_4fc4c2f9911038612d7b84730da888c4 = L.map(
+                "map_4fc4c2f9911038612d7b84730da888c4",
+                {
+                    center: [42.5, 12.5],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 6,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_5343133ce444128e6ff3f97629d1111f = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_5343133ce444128e6ff3f97629d1111f.addTo(map_4fc4c2f9911038612d7b84730da888c4);
+        
+    
+            var marker_420dc53569882cbb6eb0afa1e8be415a = L.marker(
+                [41.2886, 13.247],
+                {
+}
+            ).addTo(map_4fc4c2f9911038612d7b84730da888c4);
+        
+    
+        var popup_df1a54577aee4ff48f3c84385cb33db5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e57d8db0e825db044692fa351314c14e = $(`<div id="html_e57d8db0e825db044692fa351314c14e" style="width: 100.0%; height: 100.0%;"><b>Hotel Riviera</b><br>Terracina<br><b>Cena:</b> 10250 zł</div>`)[0];
+                popup_df1a54577aee4ff48f3c84385cb33db5.setContent(html_e57d8db0e825db044692fa351314c14e);
+            
+        
+
+        marker_420dc53569882cbb6eb0afa1e8be415a.bindPopup(popup_df1a54577aee4ff48f3c84385cb33db5)
+        ;
+
+        
+    
+    
+            marker_420dc53569882cbb6eb0afa1e8be415a.bindTooltip(
+                `<div>
+                     Hotel Riviera
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_5379c6b1865fa5e0d5c9fc29f0fb28e1 = L.marker(
+                [38.0732, 13.4923],
+                {
+}
+            ).addTo(map_4fc4c2f9911038612d7b84730da888c4);
+        
+    
+        var popup_6e60ffdf10e27b7fdd756e7527a1eac9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f5129d1e28ba3b1123e9ced5a702b61b = $(`<div id="html_f5129d1e28ba3b1123e9ced5a702b61b" style="width: 100.0%; height: 100.0%;"><b>Villa Paradiso</b><br>Ficarazzi<br><b>Cena:</b> 8798 zł</div>`)[0];
+                popup_6e60ffdf10e27b7fdd756e7527a1eac9.setContent(html_f5129d1e28ba3b1123e9ced5a702b61b);
+            
+        
+
+        marker_5379c6b1865fa5e0d5c9fc29f0fb28e1.bindPopup(popup_6e60ffdf10e27b7fdd756e7527a1eac9)
+        ;
+
+        
+    
+    
+            marker_5379c6b1865fa5e0d5c9fc29f0fb28e1.bindTooltip(
+                `<div>
+                     Villa Paradiso
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_cdafbec4b5cca8e9ec9319b1b7207e50 = L.marker(
+                [37.979, 12.96],
+                {
+}
+            ).addTo(map_4fc4c2f9911038612d7b84730da888c4);
+        
+    
+        var popup_03a93bcfbdeaec70730dde6ca104dd7f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1b78633774f3c205deafa89e9f2a7741 = $(`<div id="html_1b78633774f3c205deafa89e9f2a7741" style="width: 100.0%; height: 100.0%;"><b>Resort Alcamo Mare</b><br>Alcamo<br><b>Cena:</b> 9868 zł</div>`)[0];
+                popup_03a93bcfbdeaec70730dde6ca104dd7f.setContent(html_1b78633774f3c205deafa89e9f2a7741);
+            
+        
+
+        marker_cdafbec4b5cca8e9ec9319b1b7207e50.bindPopup(popup_03a93bcfbdeaec70730dde6ca104dd7f)
+        ;
+
+        
+    
+    
+            marker_cdafbec4b5cca8e9ec9319b1b7207e50.bindTooltip(
+                `<div>
+                     Resort Alcamo Mare
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_7c31b89297bb926b3fdb2324a115d9c0 = L.marker(
+                [43.092, 10.5432],
+                {
+}
+            ).addTo(map_4fc4c2f9911038612d7b84730da888c4);
+        
+    
+        var popup_df663e1a287a8063761fcc19b83c46a0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_450cce3ccf384f46b765c339e2b505a6 = $(`<div id="html_450cce3ccf384f46b765c339e2b505a6" style="width: 100.0%; height: 100.0%;"><b>Hotel Sole Mare</b><br>San Vincenzo<br><b>Cena:</b> 6691 zł</div>`)[0];
+                popup_df663e1a287a8063761fcc19b83c46a0.setContent(html_450cce3ccf384f46b765c339e2b505a6);
+            
+        
+
+        marker_7c31b89297bb926b3fdb2324a115d9c0.bindPopup(popup_df663e1a287a8063761fcc19b83c46a0)
+        ;
+
+        
+    
+    
+            marker_7c31b89297bb926b3fdb2324a115d9c0.bindTooltip(
+                `<div>
+                     Hotel Sole Mare
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>
